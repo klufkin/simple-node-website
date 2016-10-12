@@ -50,4 +50,7 @@ app.get('/', function(request, response) {
 // if you do not install nodemon globally "npm install -g nodemon", then you will
 // have to give the explicit path name to run, in this case the command would be:
 // "./node_modules/.bin/nodemon server.js"
-// this will restart the server upon saving any changes to server.js
+
+// Another option is to update the .bashrc file in your home directory with the path to the node_module commands
+// add this line to your .bashrc file: PATH="$PATH:./node_modules/.bin"
+// this will allow you to run package module commands locally without globally installing a package
