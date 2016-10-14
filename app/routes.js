@@ -1,4 +1,5 @@
 var express = require('express'); // import the express module
+var path = require('path'); // node module - path helper
 
 // create router object
 var router = express.Router(); // will apply all our routes to router instead of entire router
@@ -6,17 +7,17 @@ var router = express.Router(); // will apply all our routes to router instead of
 
 // route our router to the '/' root folder (homepage)
 router.get('/', function(request, response) {
-    response.send('hello world!'); // when anyone navigates to the homepage send the string reponse 'hello world!'
+    response.sendFile(path.join(__dirname, '../index.html'))
 });
 
 // route for the about page
 router.get('/about', function(request, response) {
-    response.send('hello world I am the about page!');
+    response.sendFile(path.join(__dirname, '../about.html'))
 });
 
 // route for contact page
 router.get('/contact', function(request, response) {
-    response.send('contact page');
+    response.sendFile(path.join(__dirname, '../contact.html'))
 });
 
 // Create a post route for our contact page. This will be used to post(retrieve) form information.

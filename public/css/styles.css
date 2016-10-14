@@ -1,0 +1,16 @@
+
+body {
+    background: #eca;
+    color: #e75;
+}
+
+.hero {
+    min-height: 400px;;
+    background: url(../img/hero-image.jpg) no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+}
