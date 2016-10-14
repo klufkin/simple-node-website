@@ -40,13 +40,13 @@ app.get('/', function(request, response) {
 
 
 // !!!BONUS!!!
-// If you want to automatically update our server upon saving of code
+// If you want to automatically update your server upon saving of code
 // we can install the package  "nodemon". Run the command "npm install nodemon" to install
 
 // to start watching our server file we run the command "nodemon server.js"
 // this will restart the server upon saving any changes to server.js
 
-// NOTES:
+// Attention:
 // if you do not install nodemon globally "npm install -g nodemon", then you will
 // have to give the explicit path name to run, in this case the command would be:
 // "./node_modules/.bin/nodemon server.js"
