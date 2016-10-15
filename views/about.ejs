@@ -26,6 +26,16 @@
     </header>
     <main>
         About
+        <ul>
+            <% for (user of users) { %>
+                <li>
+                    <h3><%= user.name %></h3>
+                    <p>Pokemon:
+                        <%= user.pokemon %>
+                    </p>
+                </li>
+                <% } %>
+        </ul>
     </main>
 </body>
 

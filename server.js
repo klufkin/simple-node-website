@@ -13,6 +13,8 @@ app.use('/', router); // app.use - is an Express middleware object which has acc
 // set static files (css and image, etc.)
 app.use(express.static(__dirname + '/public'));
 
+app.set('view engine', 'ejs'); // set view engine to ejs (was downloaded) - a js templating tool
+
 
 // start the server
 app.listen(port, function() {

@@ -1,10 +1,12 @@
 # Node Website notes
 simple site built with node and express
 
-1- Built a simple node server
-2 - Updated our node server w/ express
-3 - In this step we add routes to our node/express application
-4 - Built out our views, and used express so node can serve our html files
+* 1- Built a simple node server
+* 2 - Updated our node server w/ express
+* 3 - In this step we add routes to our node/express application
+* 4 - Built out our views, and used express so node can serve our html files
+* 5 - Used the templating engine 'ejs' to render data into the 'about' view
+** This was done by setting the express templating engine to 'ejs', and then rendering the data in the routes.js file
 
 * Public folder contains all of our static files e.g. - html, css, images etc.
 * App folder contains logic

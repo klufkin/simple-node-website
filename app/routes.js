@@ -12,7 +12,24 @@ router.get('/', function(request, response) {
 
 // route for the about page
 router.get('/about', function(request, response) {
-    response.sendFile(path.join(__dirname, '../about.html'))
+    var users = [{
+        name: 'Brock',
+        pokemon: 'geodude'
+    }, {
+        name: 'Bill',
+        pokemon: 'caterpie'
+    }, {
+        name: 'Red',
+        pokemon: 'charmander'
+    }, {
+        name: 'Ash',
+        pokemon: 'pikacu'
+    }];
+
+    // Use render to pass the users object to the about page view
+    response.render('about', {
+        users: users
+    });
 });
 
 // route for contact page
